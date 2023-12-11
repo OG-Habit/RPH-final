@@ -27,7 +27,7 @@ export default function Fourth() {
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 1, delay: 0.1 }}
-            viewport={{ once: true }}>
+            viewport={{ once: false }}>
             <SectionHeader 
                 headerInfo={{
                     title: "Rizal and Katipunan Betrayed", 
@@ -81,7 +81,7 @@ export default function Fourth() {
                     initial="hidden"
                     whileInView="visible"
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false }}
                     className="animate_top flex flex-col flex-wrap justify-start rounded-[10px] border border-stroke bg-white shadow-solid-5 dark:border-strokedark dark:bg-blacksection dark:shadow-solid-6 md:flex-nowrap xl:mb-13"
                     >
                         <div

@@ -28,7 +28,7 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 1, delay: 0.1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="animate_top mx-auto text-center mt-40 mb-25 bg-white"
       >
         <div>

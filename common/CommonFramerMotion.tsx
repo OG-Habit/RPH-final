@@ -23,7 +23,7 @@ export default function CommonFramerMotion(props: Props) {
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 1, delay: 0.1 }}
-            viewport={{ once: true }}>
+            viewport={{ once: false }}>
         {props.children}
     </motion.div>
   )
