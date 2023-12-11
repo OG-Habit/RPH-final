@@ -80,7 +80,7 @@ export default function Sixth() {
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 1, delay: 0.1 }}
-            viewport={{ once: true }}>
+            viewport={{ once: false }}>
                 <SectionHeader 
                     headerInfo={{
                         title: "Betrayal of Emilio Aguinaldo", 

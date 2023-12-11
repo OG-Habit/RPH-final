@@ -26,7 +26,7 @@ export default function Seventh() {
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 1, delay: 0.1 }}
-            viewport={{ once: true }}>
+            viewport={{ once: false }}>
             <SectionHeader 
                 headerInfo={{
                     title: "Death of Andres Bonifacio", 
