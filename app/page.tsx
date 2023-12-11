@@ -9,6 +9,7 @@ import Fourth from './sections/04-Antonio Luna Betraying the Katipunan and Jose 
 import Fifth from './sections/05-Rivalry between Emilio and Andres'
 import Sixth from './sections/06-Betrayal_of_Emilio_Aguinaldo'
 import Seventh from './sections/07-Death_of_Andres_Bonifacio'
+import Eighth from './sections/08-Telegrams_to_Luna'
 import ScrollToTop from './sections/ScrollToTop'
 import './bg.css'
 
@@ -25,6 +26,7 @@ export default function Home() {
       <Fifth/>
       <Sixth/>
       <Seventh/>
+      <Eighth/>
       <ScrollToTop/>
       <div className="stars">
         <div className="star"></div>

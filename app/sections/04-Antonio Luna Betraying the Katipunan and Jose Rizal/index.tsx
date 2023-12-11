@@ -36,7 +36,7 @@ export default function Fourth() {
             }}/>   
 
             <div className="flex flex-wrap justify-evenly mb-12">
-                <div className="flex flex-col justify-evenly" style={{ 
+                <div className="flex flex-col justify-evenly bg-white" style={{ 
                     width: '700px'
                  }}>
                     <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero self-center">
@@ -159,8 +159,8 @@ export default function Fourth() {
                         initial="hidden"
                         whileInView="visible"
                         transition={{ duration: 0.5, delay: 0.5 }}
-                        viewport={{ once: true }}
-                        className="animate_top"
+                        viewport={{ once: false }}
+                        className="animate_top bg-white"
                         style={{ 
                             width: '400px'
                          }}
