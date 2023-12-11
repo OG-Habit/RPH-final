@@ -87,7 +87,7 @@ export default function Sixth() {
                     </>
                 }
                 second={
-                    <><img src="/img/Emilio_aguinaldo.png"/></>
+                    <><Image src="/img/Emilio_aguinaldo.png" width={500} height={500} alt="Emilio Aguinaldo Portrait"/></>
                 }
                 leftRatio={8}
                 rightRatio={4}
@@ -113,7 +113,7 @@ export default function Sixth() {
                     justifyContent="center"
                     >
                         {facts.map((fact, index) => (
-                            <Grid key={index} item xs={4}>
+                            <Grid item md={6} lg={4}>
                                 <CommonFlipCard details={fact}/>
                             </Grid>
                         ))}

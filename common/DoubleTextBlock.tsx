@@ -19,10 +19,10 @@ export default function DoubleTextBlock({first, second, leftRatio=6, rightRatio=
             container
             spacing={spacing}
             >
-                <Grid item xs={leftRatio}>
+                <Grid item md={leftRatio}>
                     {first}
                 </Grid>
-                <Grid item xs={rightRatio}>
+                <Grid item md={rightRatio}>
                     {second}
                 </Grid> 
             </Grid>
