@@ -1,12 +1,18 @@
+"use client";
+import CommonFlipCard from "@/common/CommonFlipCard";
+import CommonFramerMotion from "@/common/CommonFramerMotion";
+import DoubleTextBlock from "@/common/DoubleTextBlock"
 import EvidenceCarousel from "@/common/EvidenceCarousel"
+import ListBlock from "@/common/ListBlock";
 import SectionHeader from "@/common/SectionHeader"
-import { itemType } from "@/utils"
-import { title } from "process"
-
-interface itemsType extends Array<itemType> {}
+import SingleTextBlock from "@/common/SingleTextBlock"
+import TitleHeader from "@/common/TitleHeader";
+import { containerMargin } from "@/utils";
+import { Grid, Container } from "@mui/material";
+import Image from 'next/image'
 
 export default function Sixth() {
-    let items: itemsType = [
+    const items = [
         {
             name: "Betrayal of Emilio Aguinaldo Evidence 1",
             description: "“There is an ominous note, foreshadowing the violent events that would unfold in a matter of weeks,” says gallery curator Lisa Guerrero Nakpil.",
@@ -30,17 +36,90 @@ export default function Sixth() {
         
     ]
 
+    const facts = [
+        {
+            title: 'Tap to reveal facts',
+            description: 'Displayed in the middle of the gallery are five papers of utmost historical importance—three Andres Bonifacio Letters, and an Emilio Jacinto notice of appointment and its philatelic cover—which most historians refer to when it comes to the issue of betrayal at Tejeros Convention or the country’s first election and “snap” election in 1897.'
+        },
+        {
+            title: 'Tap to reveal facts',
+            description: 'The first note is one of the surviving handwritten letters that Bonifacio sent to the “Brains of Katipunan” Emilio Jacinto from Cavite, according to scholar Jim Richardson in his book Light of Liberty: Documents and Studies on the Katipunan, 1892-1897. In this brief note dated Mar. 8, 1897, “Bonifacio asks Jacinto to use the ‘code of the second degree’ if he has to write anything in confidence, because, he says, Jacinto’s letters are reaching him already opened.”'
+        },
+        {
+            title: 'Tap to reveal facts',
+            description: 'A few days after the Supremo sent the first letter, the Tejeros Convention took place (Mar. 22). In the collection’s second letter, Bonifacio tells Jacinto what happened in the election. “The meeting, he says, had ended in chaos and consequently had no significance. Implicit in his letter is a bitter recognition that not all the revolutionary forces still recognize the authority of the Katipunan,” says Richardson.'
+        },
+        {
+            title: 'Tap to reveal facts',
+            description: 'The third letter dated Apr. 24 is more lengthy with Bonifacio reiterating what he wrote to Jacinto; he didn’t know whether Jacinto had received his previous letter dated Apr. 16—that some territories in Cavite had been retaken by the Spaniards, a number of Magdalo leaders had surrendered, and that the decisions of the Tejeros Convention had been vetoed.'
+        },
+        {
+            title: 'Tap to reveal facts',
+            description: 'The Supremo also wrote that he was camped outside Indang, Cavite with about 1,000 troops and was just waiting for his emissary Antonino Guevara to return and report back to him from the north. But Guevara never returned until Aguinaldo’s delegation killed Bonifacio in the mountains of Maragondon, according to Nakpil.'
+        },
+        {
+            title: 'Tap to reveal facts',
+            description: '“Bonifacio would not perish at the hands of the Spanish, like Jose Rizal, but in the greatest travesties of Philippine history, at the hands of his countrymen,” writes Nakpil in the gallery’s catalog.'
+        },
+    ]
+
     return (
         <div>
-            <SectionHeader 
-                headerInfo={{
-                    title: "Betrayal of Emilio Aguinaldo", 
-                    subtitle:"1897", 
-                    description: "The betrayal of Emilio Aguinaldo refers to a complex historical episode in the Philippines during the Philippine-American War (1899-1902) and the subsequent period of American colonization. Emilio Aguinaldo, the leader of the Filipino forces during the Philippine Revolution against Spanish rule, later found himself in a challenging position as the Philippines transitioned from Spanish to American control."
-                }}/>
-            <EvidenceCarousel items={items}/>
-
-            helllooooo
+            <CommonFramerMotion>
+                <SectionHeader 
+                    headerInfo={{
+                        title: "Betrayal of Emilio Aguinaldo", 
+                        subtitle:"1897", 
+                        description: ""
+                    }}/>
+                <DoubleTextBlock
+                first={
+                    <>
+                    <TitleHeader>
+                        A Historical Episode in the Philippines
+                    </TitleHeader>
+                    <div>The betrayal of Emilio Aguinaldo refers to a complex historical episode in the Philippines during the Philippine-American War (1899-1902) and the subsequent period of American colonization. Emilio Aguinaldo, the leader of the Filipino forces during the Philippine Revolution against Spanish rule, later found himself in a challenging position as the Philippines transitioned from Spanish to American control.</div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div>Accounts of one of Philippine history’s biggest betrayal are now available for viewing. And they're not pretty.</div>
+                    </>
+                }
+                second={
+                    <><img src="/img/Emilio_aguinaldo.png"/></>
+                }
+                leftRatio={8}
+                rightRatio={4}
+                />
+                <SingleTextBlock>
+                    <h1 className="pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero self-center">
+                        Evidences of Emilio's Betrayal
+                    </h1>
+                    <div>available for viewing at Leon Gallery in Makati</div>
+                </SingleTextBlock>
+                <EvidenceCarousel items={items}/>
+                <Grid container justifyContent="center" alignItems="center">
+                    <Grid item>
+                        <TitleHeader>
+                            Facts About Emilio's Betrayal
+                        </TitleHeader>
+                    </Grid>
+                </Grid>
+                <Container maxWidth='lg' sx={containerMargin}>
+                    <Grid
+                    container
+                    spacing={6}
+                    justifyContent="center"
+                    >
+                        {facts.map((fact, index) => (
+                            <Grid item xs={4}>
+                                <CommonFlipCard details={fact}/>
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Container>
+            </CommonFramerMotion>
         </div>
     )
 }

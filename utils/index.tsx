@@ -7,3 +7,5 @@ export interface itemType {
 export interface itemsType {
     items: Array<itemType>
 }
+
+export const containerMargin = { marginBottom: 2 }

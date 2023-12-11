@@ -8,6 +8,7 @@ import ScrollToTop from './sections/ScrollToTop'
 import Fourth from './sections/04-Antonio Luna Betraying the Katipunan and Jose Rizal'
 import Fifth from './sections/05-Rivalry between Emilio and Andres'
 import './bg.css'
+import Seventh from './sections/07-Death_of_Andres_Bonifacio'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Fourth/>
       <Fifth/>
       <Sixth/>
+      <Seventh/>
       <ScrollToTop/>
       <div className="stars">
         <div className="star"></div>
