@@ -22,7 +22,7 @@ export default function Fifth() {
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 1, delay: 0.1 }}
-            viewport={{ once: true }}>
+            viewport={{ once: false }}>
             <SectionHeader
                 headerInfo={{
                     title: "Rivalry between Andres and Emilio", 
@@ -36,7 +36,7 @@ export default function Fifth() {
                     width={280}
                     alt="Andres Bonifacio"
                 />
-                <div className="flex flex-col justify-evenly" style={{ 
+                <div className="flex flex-col justify-evenly bg-white" style={{ 
                     width: '700px'
                  }}>
                     <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero self-center">
@@ -51,7 +51,7 @@ export default function Fifth() {
                 </div>
             </div>  
             <div className="flex flex-wrap justify-evenly mb-12">
-                <div className="flex flex-col justify-evenly" style={{ 
+                <div className="flex flex-col bg-white justify-evenly" style={{ 
                     width: '700px'
                  }}>
                     <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero self-start">
