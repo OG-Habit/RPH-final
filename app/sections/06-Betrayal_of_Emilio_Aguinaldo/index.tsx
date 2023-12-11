@@ -107,7 +107,7 @@ export default function Sixth() {
                     <h1 className="pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero self-center">
                         Evidences of Emilio&apos;s Betrayal
                     </h1>
-                    <div>Accounts of one of Philippine history’s biggest betrayal are now available available for viewing at <b>Leon Gallery in Makati</b>. And they're not pretty.</div>
+                    <div>Accounts of one of Philippine history&apos;s biggest betrayal are now available available for viewing at <b>Leon Gallery in Makati</b>. And they&apos;re not pretty.</div>
                 </SingleTextBlock>
                 <EvidenceCarousel items={items}/>
                 <Grid container justifyContent="center" alignItems="center">

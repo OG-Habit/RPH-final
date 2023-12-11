@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div>
       <Header text='Betrayals that Hindered Our Progress for Independence'/>
-      <First/>
+      {/* <First/> */}
       <Second/>
       <Third/>
       <Fourth/>
