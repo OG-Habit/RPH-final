@@ -8,7 +8,7 @@ import SectionHeader from "@/common/SectionHeader"
 import SingleTextBlock from "@/common/SingleTextBlock"
 import TitleHeader from "@/common/TitleHeader";
 import { containerMargin } from "@/utils";
-import { Grid, Container } from "@mui/material";
+import { Grid, Container, Paper } from "@mui/material";
 import Image from 'next/image'
 
 export default function Sixth() {
@@ -79,15 +79,11 @@ export default function Sixth() {
                         A Historical Episode in the Philippines
                     </TitleHeader>
                     <div>The betrayal of Emilio Aguinaldo refers to a complex historical episode in the Philippines during the Philippine-American War (1899-1902) and the subsequent period of American colonization. Emilio Aguinaldo, the leader of the Filipino forces during the Philippine Revolution against Spanish rule, later found himself in a challenging position as the Philippines transitioned from Spanish to American control.</div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <div>Accounts of one of Philippine history&apos;s biggest betrayal are now available for viewing. And they&apos;re not pretty.</div>
+                    
                     </>
                 }
                 second={
-                    <><Image src="/img/Emilio_aguinaldo.png" width={500} height={500} alt="Emilio Aguinaldo Portrait"/></>
+                    <Paper><Image src="/img/emilio-aguinaldo.png" width={500} height={500} alt="Emilio Aguinaldo Portrait" className="w-full h-[320px] object-cover object-top"/></Paper>
                 }
                 leftRatio={8}
                 rightRatio={4}
@@ -96,7 +92,7 @@ export default function Sixth() {
                     <h1 className="pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero self-center">
                         Evidences of Emilio&apos;s Betrayal
                     </h1>
-                    <div>available for viewing at Leon Gallery in Makati</div>
+                    <div>Accounts of one of Philippine history’s biggest betrayal are now available available for viewing at <b>Leon Gallery in Makati</b>. And they're not pretty.</div>
                 </SingleTextBlock>
                 <EvidenceCarousel items={items}/>
                 <Grid container justifyContent="center" alignItems="center">
