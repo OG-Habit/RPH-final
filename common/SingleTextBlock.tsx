@@ -11,7 +11,7 @@ export default function SingleTextBlock(props: Props) {
     const { children, reactWindow } = props;
 
   return (
-    <Container maxWidth='md' sx={containerMargin}>
+    <Container sx={containerMargin}>
         <Typography>
             {children}
         </Typography>

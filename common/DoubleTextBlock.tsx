@@ -6,17 +6,23 @@ import React from 'react'
 interface Props {
     first: React.ReactNode;
     second: React.ReactNode;
+    leftRatio?: number;
+    rightRatio?: number;
+    spacing?: number;
 }
 
-export default function DoubleTextBlock({first, second}: Props) {
+export default function DoubleTextBlock({first, second, leftRatio=6, rightRatio=6, spacing=24}: Props) {
 
     return (
-        <Container maxWidth='md' sx={containerMargin}>
-            <Grid container spacing={2}>
-                <Grid item xs={6}>
+        <Container maxWidth='lg' sx={containerMargin}>
+            <Grid
+            container
+            spacing={spacing}
+            >
+                <Grid item xs={leftRatio}>
                     {first}
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={rightRatio}>
                     {second}
                 </Grid> 
             </Grid>
