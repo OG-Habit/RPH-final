@@ -1,3 +1,4 @@
+"use client";
 import * as React from 'react';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
@@ -7,6 +8,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Grid, Paper } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
+
 
 const style = {
     position: 'absolute' as 'absolute',
@@ -32,7 +34,7 @@ export default function PopupModal(props: Props) {
     const handleClose = () => setOpen(false);
 
     return (
-        <div>
+        <>
             <Grid container justifyContent='center'>
                 <Grid item>
                     <Button onClick={handleOpen} variant='contained' color='primary'>{props.buttonText}</Button>
@@ -73,6 +75,6 @@ export default function PopupModal(props: Props) {
                     </Paper>
                 </Fade>
             </Modal>
-        </div>
+        </>
     );
 }

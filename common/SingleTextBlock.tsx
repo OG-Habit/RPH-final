@@ -12,9 +12,7 @@ export default function SingleTextBlock(props: Props) {
 
   return (
     <Container sx={containerMargin}>
-        <Typography>
-            {children}
-        </Typography>
+        {children}
     </Container>
   )
 }

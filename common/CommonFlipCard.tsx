@@ -1,3 +1,4 @@
+"use client";
 import React, { CSSProperties, useState } from 'react'
 import FlipCard from './FlipCard'
 import ReactCardFlip from 'react-card-flip'

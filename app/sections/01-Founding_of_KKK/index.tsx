@@ -1,16 +1,25 @@
-import CommonFramerMotion from '@/common/CommonFramerMotion'
 import DoubleTextBlock from '@/common/DoubleTextBlock'
 import SectionHeader from '@/common/SectionHeader'
+import { motion } from 'framer-motion'
 
 export default function First() {
     return (
-      <CommonFramerMotion>
-        <SectionHeader 
-            headerInfo={{
-                title: "Founding of KKK by Andres Bonifacio", 
-                subtitle:"July 7, 1892", 
-                description: ""
-            }}/>
+      <motion.div
+            variants={{
+                hidden: {
+                opacity: 0,
+                y: -20,
+                },
+    
+                visible: {
+                opacity: 1,
+                y: 0,
+                },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: true }}>
 
         <DoubleTextBlock
         first={
@@ -21,6 +30,6 @@ export default function First() {
         }
         leftRatio={8}
         rightRatio={4}/>    
-    </CommonFramerMotion>
+    </motion.div>
     )
   }  

@@ -1,6 +1,5 @@
 "use client";
 import CommonFlipCard from "@/common/CommonFlipCard";
-import CommonFramerMotion from "@/common/CommonFramerMotion";
 import DoubleTextBlock from "@/common/DoubleTextBlock"
 import EvidenceCarousel from "@/common/EvidenceCarousel"
 import ListBlock from "@/common/ListBlock";
@@ -9,6 +8,7 @@ import SingleTextBlock from "@/common/SingleTextBlock"
 import TitleHeader from "@/common/TitleHeader";
 import { containerMargin } from "@/utils";
 import { Grid, Container, Paper } from "@mui/material";
+import { motion } from "framer-motion";
 import Image from 'next/image'
 
 export default function Sixth() {
@@ -65,7 +65,22 @@ export default function Sixth() {
 
     return (
         <div>
-            <CommonFramerMotion>
+        <motion.div
+            variants={{
+                hidden: {
+                opacity: 0,
+                y: -20,
+                },
+    
+                visible: {
+                opacity: 1,
+                y: 0,
+                },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: true }}>
                 <SectionHeader 
                     headerInfo={{
                         title: "Betrayal of Emilio Aguinaldo", 
@@ -115,7 +130,7 @@ export default function Sixth() {
                         ))}
                     </Grid>
                 </Container>
-            </CommonFramerMotion>
+            </motion.div>
         </div>
     )
 }

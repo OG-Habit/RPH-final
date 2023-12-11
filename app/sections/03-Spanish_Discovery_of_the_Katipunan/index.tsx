@@ -1,4 +1,4 @@
-import CommonFramerMotion from '@/common/CommonFramerMotion'
+"use client"
 import DoubleTextBlock from '@/common/DoubleTextBlock'
 import SectionHeader from '@/common/SectionHeader'
 import { Grid, Paper, Typography } from '@mui/material'
@@ -9,6 +9,7 @@ import SingleTextBlock from '@/common/SingleTextBlock'
 import CommonFlipCard from '@/common/CommonFlipCard'
 import ListBlock from '@/common/ListBlock'
 import PopupModal from '@/common/PopupModal'
+import { motion } from 'framer-motion'
 
 export default function Third() {
     const versionInfo = [
@@ -68,7 +69,22 @@ export default function Third() {
     ]
 
   return (
-    <CommonFramerMotion>
+    <motion.div
+            variants={{
+                hidden: {
+                opacity: 0,
+                y: -20,
+                },
+    
+                visible: {
+                opacity: 1,
+                y: 0,
+                },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: true }}>
         <SectionHeader 
             headerInfo={{
                 title: "Spanish “Discovery” of the Katipunan", 
@@ -79,7 +95,7 @@ export default function Third() {
             first={
                 <>
                 <TitleHeader>The "Discovery" of the Katipunan</TitleHeader>
-                <Typography>Sylvia Mendez Ventura (2001, 64–67) presents three versions of the “discovery” of the Katipunan. All of them revolve around Teodoro Patiño, Fr. Mariano Gil, and a few other personalities associated with Bonifacio.</Typography>
+                <Typography>Sylvia Mendez Ventura's exploration of the "discovery" of the Katipunan sheds light on the various narratives surrounding this crucial event in Philippine history. The Katipunan was a secret revolutionary society that played a significant role in the fight against Spanish colonial rule. Teodoro Patiño, Fr. Mariano Gil, and other individuals linked to Andres Bonifacio are key figures in these narratives. Their roles in the events leading to the "discovery" of the Katipunan vary across the three versions presented by Ventura.</Typography>
                 </>
             }
             second={
@@ -107,6 +123,6 @@ export default function Third() {
                 </Grid>
             </SingleTextBlock>
 
-    </CommonFramerMotion>
+    </motion.div>
   )
 }

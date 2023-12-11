@@ -1,9 +1,9 @@
-import CommonFramerMotion from '@/common/CommonFramerMotion'
 import DoubleTextBlock from '@/common/DoubleTextBlock'
 import SectionHeader from '@/common/SectionHeader'
 import SingleTextBlock from '@/common/SingleTextBlock'
 import TitleHeader from '@/common/TitleHeader'
 import { Container, Grid, Paper } from '@mui/material'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 
@@ -11,14 +11,28 @@ import React from 'react'
 export default function Seventh() {
   return (
     <div>
-        <CommonFramerMotion>
+        <motion.div
+            variants={{
+                hidden: {
+                opacity: 0,
+                y: -20,
+                },
+    
+                visible: {
+                opacity: 1,
+                y: 0,
+                },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: true }}>
             <SectionHeader 
                 headerInfo={{
                     title: "Death of Andres Bonifacio", 
                     subtitle:"May 10, 1897", 
                     description: ""
                 }}/>
-                
             <DoubleTextBlock
                 first={
                     <Paper><Image src="/img/andres-bonifacio.png" width={500} height={500} alt="Andres Bonifacio Portrait" className="w-full h-[320px] object-cover object-top"/></Paper>
@@ -81,7 +95,8 @@ export default function Seventh() {
                     </Grid>
                 </Grid>
             </Container>
-        </CommonFramerMotion>
+        </motion.div>
+
     </div>
   )
 }
