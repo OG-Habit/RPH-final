@@ -1,6 +1,7 @@
 "use client"
 
 import Image from 'next/image'
+import Header from './sections/00-Header'
 import First from './sections/01-Founding_of_KKK'
 import Second from './sections/02-Implication_of_Wealthy_Filipinos'
 import Third from './sections/03-Spanish_Discovery_of_the_Katipunan'
@@ -17,6 +18,7 @@ import './bg.css'
 export default function Home() {
   return (
     <div>
+      <Header text='Betrayals that Hindered Our Progress for Independence'/>
       <First/>
       <Second/>
       <Third/>
