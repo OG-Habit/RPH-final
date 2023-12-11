@@ -2,11 +2,11 @@
 import React from 'react'
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button, Container } from '@mui/material'
-import { itemsType } from '@/utils';
+import { containerMargin, itemsType } from '@/utils';
 
 export default function EvidenceCarousel({items}: itemsType) {
   return (
-    <Container maxWidth='md'>
+    <Container maxWidth='md' sx={containerMargin}>
         <Carousel>
             {
                 items.map( (item, i) => 
