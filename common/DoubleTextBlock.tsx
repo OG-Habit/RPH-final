@@ -11,7 +11,7 @@ interface Props {
     spacing?: number;
 }
 
-export default function DoubleTextBlock({first, second, leftRatio=6, rightRatio=6, spacing=24}: Props) {
+export default function DoubleTextBlock({first, second, leftRatio=6, rightRatio=6, spacing=12}: Props) {
 
     return (
         <Container maxWidth='lg' sx={containerMargin}>
