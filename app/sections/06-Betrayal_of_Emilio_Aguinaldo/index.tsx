@@ -125,7 +125,24 @@ export default function Sixth() {
                     >
                         {facts.map((fact, index) => (
                             <Grid key={index} item md={6} lg={4}>
+                                <motion.div
+                                variants={{
+                                    hidden: {
+                                    opacity: 0,
+                                    y: -20,
+                                    },
+                        
+                                    visible: {
+                                    opacity: 1,
+                                    y: 0,
+                                    },
+                                }}
+                                initial="hidden"
+                                whileInView="visible"
+                                transition={{ duration: 1, delay: 0.1 }}
+                                viewport={{ once: false }}>
                                 <CommonFlipCard details={fact}/>
+                                </motion.div>
                             </Grid>
                         ))}
                     </Grid>
