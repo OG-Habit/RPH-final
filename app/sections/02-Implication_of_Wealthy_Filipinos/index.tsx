@@ -89,7 +89,7 @@ export default function Second() {
                         alt="Pio Valenzuela"
                     />  
                 </div>
-                <div className="flex flex-col justify-evenly" style={{ 
+                <div className="flex flex-col justify-evenly bg-white" style={{ 
                     width: '700px'
                  }}>
                     <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero self-center">
