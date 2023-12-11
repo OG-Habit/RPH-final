@@ -44,8 +44,8 @@ export default function Seventh() {
                             Execution of Bonifacio
                         </TitleHeader>
 
-                            The circumstances surrounding Bonifacio's execution remain a subject of historical debate. On May 10, 1897, in the mountains of Maragondon, Andres Bonifacio and his brother Procopio were executed.
-                            Andres Bonifiacio was captured by Aguinaldo’s men and he was executed under the order of Aguinaldo. 
+                            The circumstances surrounding Bonifacio&apos;s execution remain a subject of historical debate. On May 10, 1897, in the mountains of Maragondon, Andres Bonifacio and his brother Procopio were executed.
+                            Andres Bonifiacio was captured by Aguinaldo&apos;s men and he was executed under the order of Aguinaldo. 
                         <br/>
                         <br/>
 

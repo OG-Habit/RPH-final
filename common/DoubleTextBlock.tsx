@@ -14,7 +14,7 @@ interface Props {
 export default function DoubleTextBlock({first, second, leftRatio=6, rightRatio=6, spacing=12}: Props) {
 
     return (
-        <Container maxWidth='lg' sx={containerMargin}>
+        <Container maxWidth='lg' sx={containerMargin} className='bg-white'>
             <Grid
             container
             spacing={spacing}

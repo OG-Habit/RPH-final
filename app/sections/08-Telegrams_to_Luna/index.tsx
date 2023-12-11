@@ -145,7 +145,7 @@ export default function Eighth() {
                     whileInView="visible"
                     transition={{ duration: 0.5, delay: 0.5 }}
                     viewport={{ once: false }}
-                    className="animate_top mx-auto max-w-c-1154 mb-40"
+                    className="animate_top mx-auto max-w-c-1154 mb-40 bg-white"
                 >
                     {telegramsData.map((tab, key) => (
                     <div

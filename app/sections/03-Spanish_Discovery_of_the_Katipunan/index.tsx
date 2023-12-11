@@ -94,8 +94,8 @@ export default function Third() {
         <DoubleTextBlock
             first={
                 <>
-                <TitleHeader>The "Discovery" of the Katipunan</TitleHeader>
-                <Typography>Sylvia Mendez Ventura's exploration of the "discovery" of the Katipunan sheds light on the various narratives surrounding this crucial event in Philippine history. The Katipunan was a secret revolutionary society that played a significant role in the fight against Spanish colonial rule. Teodoro Patiño, Fr. Mariano Gil, and other individuals linked to Andres Bonifacio are key figures in these narratives. Their roles in the events leading to the "discovery" of the Katipunan vary across the three versions presented by Ventura.</Typography>
+                <TitleHeader>The &quot;Discovery&quot; of the Katipunan</TitleHeader>
+                <Typography>Sylvia Mendez Ventura&apos;s exploration of the &quot;discovery&quot; of the Katipunan sheds light on the various narratives surrounding this crucial event in Philippine history. The Katipunan was a secret revolutionary society that played a significant role in the fight against Spanish colonial rule. Teodoro Patiño, Fr. Mariano Gil, and other individuals linked to Andres Bonifacio are key figures in these narratives. Their roles in the events leading to the &quot;discovery&quot; of the Katipunan vary across the three versions presented by Ventura.</Typography>
                 </>
             }
             second={

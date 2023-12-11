@@ -21,7 +21,7 @@ export default function Home() {
     <div>
       <Header text='Betrayals that Hindered Our Progress for Independence'/>
       <MeetOurGroup/>
-      <First/>
+      {/* <First/> */}
       <Second/>
       <Third/>
       <Fourth/>
