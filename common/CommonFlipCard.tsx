@@ -5,7 +5,7 @@ import ReactCardFlip from 'react-card-flip'
 interface Props {
     details: {
         title: string
-        description: string
+        description: any
         src?: string
     }
 }
