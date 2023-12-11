@@ -74,7 +74,23 @@ export default function Second() {
                     subtitle:"June, 1896", 
                     description:""
             }}/>     
-            <div className="flex flex-wrap justify-evenly mb-12">
+            <motion.div 
+            variants={{
+                hidden: {
+                opacity: 0,
+                y: -20,
+                },
+    
+                visible: {
+                opacity: 1,
+                y: 0,
+                },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: false }}
+                className="flex flex-wrap justify-evenly mb-12">
                 <div className="flex">
                     <Image
                         src="/img/andres-bonifacio.png"
@@ -102,8 +118,24 @@ export default function Second() {
                         Andres Bonifacio (left) and Pio Valenzuela (right) were key figures in the Philippine struggle for independence against Spanish colonial rule. Bonifacio, born in 1863, was a revolutionary leader and the founder of the secret society Katipunan, which played a crucial role in the Philippine Revolution. He advocated for social equality and led the fight for independence until his tragic death in 1897. Pio Valenzuela, on the other hand, was a physician and a member of the Katipunan. He was tasked with a significant mission—to seek the support of the revolutionary movement in the provinces. 
                     </p>
                 </div>
-            </div>   
-            <div style={{ 
+            </motion.div>   
+            <motion.div
+            variants={{
+                hidden: {
+                opacity: 0,
+                y: -20,
+                },
+    
+                visible: {
+                opacity: 1,
+                y: 0,
+                },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: false }}
+            style={{ 
                 display: 'flex',
                 justifyContent: 'space-around'
              }}>
@@ -222,7 +254,7 @@ export default function Second() {
                         )}>
                     </FlipCard>
                 </ReactCardFlip>   
-            </div>            
+            </motion.div>            
              
         </motion.div>
     )

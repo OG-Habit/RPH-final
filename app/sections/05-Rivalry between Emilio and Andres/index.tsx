@@ -29,7 +29,23 @@ export default function Fifth() {
                     subtitle:"March, 1897", 
                     description:""
             }}/>
-            <div className="flex flex-wrap justify-evenly mb-12">
+            <motion.div 
+            variants={{
+                hidden: {
+                opacity: 0,
+                y: -20,
+                },
+    
+                visible: {
+                opacity: 1,
+                y: 0,
+                },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: false }}
+            className="flex flex-wrap justify-evenly mb-12">
                 <Image
                     src="/img/andres-bonifacio.png"
                     height={300}
@@ -49,8 +65,24 @@ export default function Fifth() {
                         Andres Bonifacio, a luminary of the Philippine Revolution, stands as a symbol of unwavering dedication to the quest for independence. Born in 1863, his life was a testament to the fervor and resilience of those who yearned for freedom from Spanish colonial rule. As the founder of the Katipunan and a charismatic revolutionary leader, Bonifacio ignited the flames of rebellion, rallying a diverse group of patriots in pursuit of a shared dream. His indomitable spirit and commitment to social justice echoed in the corridors of history, leaving an enduring legacy that continues to inspire generations. Bonifacio&apos;s journey, marked by sacrifice and honor, is a cornerstone of the Philippines&apos; struggle for sovereignty, making him a revered figure in the tapestry of national heroism.
                     </p>
                 </div>
-            </div>  
-            <div className="flex flex-wrap justify-evenly mb-12">
+            </motion.div>  
+            <motion.div 
+            variants={{
+                hidden: {
+                opacity: 0,
+                y: -20,
+                },
+    
+                visible: {
+                opacity: 1,
+                y: 0,
+                },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 3, delay: 0.1 }}
+            viewport={{ once: false }}
+            className="flex flex-wrap justify-evenly mb-12">
                 <div className="flex flex-col bg-white justify-evenly" style={{ 
                     width: '700px'
                  }}>
@@ -70,11 +102,26 @@ export default function Fifth() {
                     width={280}
                     alt="Emilio Aguinaldo"
                 />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+            variants={{
+                hidden: {
+                opacity: 0,
+                y: -20,
+                },
+    
+                visible: {
+                opacity: 1,
+                y: 0,
+                },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: false }}>
                 <EvidenceCarousel
                     items={fifthData}/>
-            </div>
+            </motion.div>
         </motion.div>
     )
 }

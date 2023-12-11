@@ -39,24 +39,56 @@ export default function Fourth() {
                 <div className="flex flex-col justify-evenly bg-white" style={{ 
                     width: '700px'
                  }}>
-                    <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero self-center">
+                    <motion.h1 
+                    variants={{
+                        hidden: {
+                        opacity: 0,
+                        y: -20,
+                        },
+            
+                        visible: {
+                        opacity: 1,
+                        y: 0,
+                        },
+                    }}
+                    initial="hidden"
+                    whileInView="visible"
+                    transition={{ duration: 1, delay: 0.1 }}
+                    viewport={{ once: false }}
+                    className="animate_top mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero self-center">
                         An Esteemed General Broken {"   "}
                         <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
                         Under Pressure
                         </span>
-                    </h1>
+                    </motion.h1>
                     <p className="mb-8 text-base leading-relaxed text-titlebgdark dark:text-waterloo">
                         General Antonio Luna was a brilliant military strategist and one of the key figures in the Philippine Revolution against Spanish colonial rule and the subsequent Philippine-American War. Born in 1866, Luna was a pharmacist, a physician, and a military officer. He played a crucial role in the establishment of the First Philippine Republic and served as the Chief of War Operations during the Philippine-American War.
                     </p>
                 </div>
-                <div className="flex">
+                <motion.div
+                variants={{
+                    hidden: {
+                    opacity: 0,
+                    y: -20,
+                    },
+        
+                    visible: {
+                    opacity: 1,
+                    y: 0,
+                    },
+                }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 1, delay: 0.1 }}
+                viewport={{ once: false }}
+                className="flex">
                     <Image
                         src="/img/antonio-luna.png"
                         height={100}
                         width={250}
                         alt="Antonio Luna"
                     />
-                </div>
+                </motion.div>
             </div>  
             <div className="flex flex-wrap items-start justify-evenly mb-12">
                 <Image
