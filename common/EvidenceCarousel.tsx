@@ -13,7 +13,7 @@ export default function EvidenceCarousel({items}: itemsType) {
                 (
                     <Paper key={i} className="relative h-[480px]">
                         <img src={item.src} alt={item.name} className="w-full h-full object-cover" />
-                        <div className="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-50 hover:bg-opacity-75 transition duration-300">
+                        <div className="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-50">
                             <p className="text-white">{item.description}</p>
                         </div>
                     </Paper>
