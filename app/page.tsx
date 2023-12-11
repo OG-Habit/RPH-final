@@ -12,6 +12,7 @@ import Seventh from './sections/07-Death_of_Andres_Bonifacio'
 import Eighth from './sections/08-Telegrams_to_Luna'
 import ScrollToTop from './sections/ScrollToTop'
 import './bg.css'
+import MeetOurGroup from './sections/00-Meet_Our_Group'
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
   return (
     <div>
       <Header text='Betrayals that Hindered Our Progress for Independence'/>
+      <MeetOurGroup/>
       <First/>
       <Second/>
       <Third/>

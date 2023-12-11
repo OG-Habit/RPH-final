@@ -34,7 +34,7 @@ export default function Third() {
 
     const versionCard = [
         {
-            title: 'Version 1',
+            title: 'First Version',
             description: (
                 <>
                 The first version attributes the discovery to the rivalry between Patiño and Apolonio de la Cruz, both of whom were employees of Diario de Manila.
@@ -45,7 +45,7 @@ export default function Third() {
                 </>)
         },
         {
-            title: 'Version 2',
+            title: 'Second Version',
             description: (
             <>
             In the second version of the discovery, Ventura recounts the story that Agoncillo (1956/2001, 142–45, 339–43) told in The Revolt of the Masses.
@@ -56,7 +56,7 @@ export default function Third() {
             </>)
         },
         {
-            title: 'Version 3',
+            title: 'Third Version',
             description: (
                 <>
                 In the third version of Ventura’s account, Patiño and Father Gil were again the main characters, but this time it was Patiño’s wife who played a pivotal role.
