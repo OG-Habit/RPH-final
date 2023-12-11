@@ -138,7 +138,7 @@ export default function Second() {
                                 <p style={{
                                     textAlign: 'left'
                                 }}>
-                                    The first edition of Kalayaan, published on January 18, 1896, came out in March with a thousand copies distributed to Katipunan members nationwide. Only one more issue was released as the Spanish authorities exposed the Katipunan. Emilio Jacinto considered Kalayaan's publication a significant achievement for the secret chamber, involving himself, Bonifacio, and Jacinto before his departure.
+                                    The first edition of Kalayaan, published on January 18, 1896, came out in March with a thousand copies distributed to Katipunan members nationwide. Only one more issue was released as the Spanish authorities exposed the Katipunan. Emilio Jacinto considered Kalayaan&apos;s publication a significant achievement for the secret chamber, involving himself, Bonifacio, and Jacinto before his departure.
                                 </p>
                             </div>
                         )}>
@@ -178,7 +178,7 @@ export default function Second() {
                                 <p style={{
                                     textAlign: 'left'
                                 }}>
-                                    In a secret chamber meeting in July 1896, they planned to assassinate the Spanish Augustinian friar who exposed the Katipunan, but the mission failed. Valenzuela also asserted that after the Katipunan's discovery, he and Bonifacio distributed letters implicating wealthy Filipinos who had refused financial support to the organization.
+                                    In a secret chamber meeting in July 1896, they planned to assassinate the Spanish Augustinian friar who exposed the Katipunan, but the mission failed. Valenzuela also asserted that after the Katipunan&apos;s discovery, he and Bonifacio distributed letters implicating wealthy Filipinos who had refused financial support to the organization.
                                 </p>
                             </div>
                         )}>
