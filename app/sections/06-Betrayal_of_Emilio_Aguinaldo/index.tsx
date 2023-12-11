@@ -79,10 +79,6 @@ export default function Sixth() {
                         A Historical Episode in the Philippines
                     </TitleHeader>
                     <div>The betrayal of Emilio Aguinaldo refers to a complex historical episode in the Philippines during the Philippine-American War (1899-1902) and the subsequent period of American colonization. Emilio Aguinaldo, the leader of the Filipino forces during the Philippine Revolution against Spanish rule, later found himself in a challenging position as the Philippines transitioned from Spanish to American control.</div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
                     
                     </>
                 }
@@ -94,7 +90,7 @@ export default function Sixth() {
                 />
                 <SingleTextBlock>
                     <h1 className="pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero self-center">
-                        Evidences of Emilio's Betrayal
+                        Evidences of Emilio&apos;s Betrayal
                     </h1>
                     <div>Accounts of one of Philippine history’s biggest betrayal are now available available for viewing at <b>Leon Gallery in Makati</b>. And they're not pretty.</div>
                 </SingleTextBlock>
@@ -102,7 +98,7 @@ export default function Sixth() {
                 <Grid container justifyContent="center" alignItems="center">
                     <Grid item>
                         <TitleHeader>
-                            Facts About Emilio's Betrayal
+                            Facts About Emilio&apos;s Betrayal
                         </TitleHeader>
                     </Grid>
                 </Grid>
@@ -113,7 +109,7 @@ export default function Sixth() {
                     justifyContent="center"
                     >
                         {facts.map((fact, index) => (
-                            <Grid item md={6} lg={4}>
+                            <Grid key={index} item md={6} lg={4}>
                                 <CommonFlipCard details={fact}/>
                             </Grid>
                         ))}
