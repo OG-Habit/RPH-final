@@ -6,6 +6,8 @@ import Second from './sections/02-Implication_of_Wealthy_Filipinos'
 import Sixth from './sections/06-Betrayal_of_Emilio_Aguinaldo'
 import ScrollToTop from './sections/ScrollToTop'
 import Fourth from './sections/04-Antonio Luna Betraying the Katipunan and Jose Rizal'
+import Fifth from './sections/05-Rivalry between Emilio and Andres'
+import './bg.css'
 import Seventh from './sections/07-Death_of_Andres_Bonifacio'
 
 export default function Home() {
@@ -13,9 +15,62 @@ export default function Home() {
     <div>
       <Second/>
       <Fourth/>
+      <Fifth/>
       <Sixth/>
       <Seventh/>
       <ScrollToTop/>
+      <div className="stars">
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+      </div>
     </div>  
   )
 }
