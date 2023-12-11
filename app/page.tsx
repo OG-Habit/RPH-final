@@ -16,7 +16,7 @@ export default function Home() {
       <Second/>
       <Fourth/>
       <Fifth/>
-      <Sixth/>
+      {/* <Sixth/> */}
       <Seventh/>
       <ScrollToTop/>
       <div className="stars">

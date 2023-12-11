@@ -113,7 +113,7 @@ export default function Sixth() {
                     justifyContent="center"
                     >
                         {facts.map((fact, index) => (
-                            <Grid item xs={4}>
+                            <Grid key={index} item xs={4}>
                                 <CommonFlipCard details={fact}/>
                             </Grid>
                         ))}
