@@ -68,7 +68,7 @@ export default function Eighth() {
                         </div>
                         <div className="md:w-3/5 lg:w-auto">
                             <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                            Clean User Interface
+                            Summoning Letter
                             </button>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ export default function Eighth() {
                         </div>
                         <div className="md:w-3/5 lg:w-auto">
                             <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                            Essential Business Pages
+                            Clipped Portion
                             </button>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ export default function Eighth() {
                         </div>
                         <div className="md:w-3/5 lg:w-auto">
                             <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                            Fully Functional Integrations
+                            Luna's Response
                             </button>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ export default function Eighth() {
                         </div>
                         <div className="md:w-3/5 lg:w-auto">
                             <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                            Fully Functional Integrations
+                            Multiple Telegrams
                             </button>
                         </div>
                     </div>

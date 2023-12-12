@@ -21,7 +21,7 @@ const telegramsData: TelegramTab[] = [
   },
   {
     id: "tabFour",
-    title: "Luna's Response",
+    title: "Multiple Telegrams",
     desc: 'Cited from Teodoro Cada’s account (telegram operator at the time), there were four telegrams sent “in quick succession and to various telegraph points [around Tarlac] to ensure the messages’ certain delivery.” In other words, Aguinaldo wanted to make sure that Luna would appear in Cabanatuan to face his death.',
     img: '/img/telegram-operator.png'
   }
